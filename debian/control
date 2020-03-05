@@ -310,6 +310,7 @@ Depends: python3,
 	gir1.2-peas-1.0,
 	python3-psutil,
 	python3-pyudev,
+    util-linux,
 	zenity,
 	${misc:Depends}, ${python3:Depends}
 Description: Applet to popup when a USB device is connected
