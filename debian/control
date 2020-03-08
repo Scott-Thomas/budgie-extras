@@ -303,16 +303,19 @@ Description: Applet to display clock across multiple time zones
 Package: budgie-dropby-applet
 Architecture: all
 Depends: python3,
-	python3-gi,
-	gir1.2-budgie-1.0,
-	gir1.2-glib-2.0,
-	gir1.2-gtk-3.0,
-	gir1.2-peas-1.0,
-	python3-psutil,
-	python3-pyudev,
-    util-linux,
-	zenity,
-	${misc:Depends}, ${python3:Depends}
+ gir1.2-budgie-1.0,
+ gir1.2-glib-2.0,
+ gir1.2-gtk-3.0,
+ gir1.2-peas-1.0,
+ python3,
+ python3-gi,
+ python3-psutil,
+ python3-pyudev,
+ zenity,
+ wmctrl,
+ util-linux,
+ ${misc:Depends},
+ ${python3:Depends},
 Description: Applet to popup when a USB device is connected
  This is part of a suite of python3 and Vala based applets for the Budgie
  Desktop that provide additional user orientated capabilities.
