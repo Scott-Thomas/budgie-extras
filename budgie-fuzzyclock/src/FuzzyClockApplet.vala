@@ -59,76 +59,76 @@ public class FuzzyClockApplet : Budgie.Applet
 
     protected string[] hours = {
         // TRANSLATORS: This is referring to the spoken time of day at 00:00:00
-        _("midnight"),
+        _("Midnight"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 01:00:00
-        _("one"),
+        _("One"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 02:00:00
-        _("two"),
+        _("Two"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 03:00:00
-        _("three"),
+        _("Three"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 04:00:00
-        _("four"),
+        _("Four"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 05:00:00
-        _("five"),
+        _("Five"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 06:00:00
-        _("six"),
+        _("Six"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 07:00:00
-        _("seven"),
+        _("Seven"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 08:00:00
-        _("eight"),
+        _("Eight"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 09:00:00
-        _("nine"),
+        _("Nine"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 10:00:00
-        _("ten"),
+        _("Ten"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 11:00:00
-        _("eleven"),
+        _("Eleven"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 12:00:00
-        _("noon"),
+        _("Noon"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 13:00:00
-        _("thirteen"),
+        _("Thirteen"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 14:00:00
-        _("fourteen"),
+        _("Fourteen"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 15:00:00
-        _("fifteen"),
+        _("Fifteen"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 16:00:00
-        _("sixteen"),
+        _("Sixteen"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 17:00:00
-        _("seventeen"),
+        _("Seventeen"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 18:00:00
-        _("eighteen"),
+        _("Eighteen"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 19:00:00
-        _("nineteen"),
+        _("Nineteen"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 20:00:00
-        _("twenty"),
+        _("Twenty"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 21:00:00
-        _("twenty-one"),
+        _("Twenty-one"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 22:00:00
-        _("twenty-two"),
+        _("Twenty-two"),
 
         // TRANSLATORS: This is referring to the spoken time of day at 23:00:00
-        _("twenty-three"),
+        _("Twenty-three"),
     };
 
     // TRANSLATORS: These format strings reference the above hour strings
@@ -147,57 +147,57 @@ public class FuzzyClockApplet : Budgie.Applet
     //  by using "<language-text> %s+1" to indicate this rule needs use a forward hour
 
     protected FuzzyClockRule[] rules = {
-        // TRANSLATORS: times between (12:58:00 - 1:02:00) are 'one-ish'
+        // TRANSLATORS: times between (12:58:00 - 1:02:00) are 'One-ish'
         new FuzzyClockRule(_("%s-ish"), 0),
 
-        // TRANSLATORS: times between (1:03:00 - 1:07:00) are 'a bit past one'
-        new FuzzyClockRule(_("a bit past %s"), 0),
+        // TRANSLATORS: times between (1:03:00 - 1:07:00) are 'A bit past one'
+        new FuzzyClockRule(_("A bit past %s"), 0),
 
-        // TRANSLATORS: times between (1:08:00 - 1:12:00) are 'ten past one'
-        new FuzzyClockRule(_("ten past %s"), 0),
+        // TRANSLATORS: times between (1:08:00 - 1:12:00) are 'Ten past one'
+        new FuzzyClockRule(_("Ten past %s"), 0),
 
-        // TRANSLATORS: times between (1:13:00 - 1:17:00) are 'quarter after one'
-        new FuzzyClockRule(_("quarter after %s"), 0),
+        // TRANSLATORS: times between (1:13:00 - 1:17:00) are 'Quarter after one'
+        new FuzzyClockRule(_("Quarter after %s"), 0),
 
         // TRANSLATORS: times between (1:18:00 - 1:22:00) are 'twenty past one'
         // by adding the characters +1 you can add one hour to the current hour i.e. 'twenty past two'
         // by adding the characters -1 you can subtract one hour from the current hour i.e. 'twenty past twelve'
-        new FuzzyClockRule(_("twenty past %s"), 0),
+        new FuzzyClockRule(_("Twenty past %s"), 0),
 
         // TRANSLATORS: times between (1:23:00 - 1:27:00) are 'almost half-past one'
         // by adding the characters +1 you can add one hour to the current hour i.e. 'almost half-past two'
         // by adding the characters -1 you can subtract one hour from the current hour i.e. 'almost half-past twelve'
-        new FuzzyClockRule(_("almost half-past %s"), 0),
+        new FuzzyClockRule(_("Almost half-past %s"), 0),
 
         // TRANSLATORS: times between (1:28:00 - 1:32:00) are 'half-past one'
         // by adding the characters +1 you can add one hour to the current hour i.e. 'half-past two'
         // by adding the characters -1 you can subtract one hour from the current hour i.e. 'half-past twelve'
-        new FuzzyClockRule(_("half-past %s"), 0),
+        new FuzzyClockRule(_("Half-past %s"), 0),
 
         // TRANSLATORS: times between (1:33:00 - 1:37:00) are 'twenty-five 'til two'
         // by adding the characters +1 you can add a further hour i.e. 'til three'
         // by adding the characters -1 you can subtract one hour i.e. 'til one'
-        new FuzzyClockRule(_("twenty-five 'til %s"), 1),
+        new FuzzyClockRule(_("Twenty-five 'til %s"), 1),
 
         // TRANSLATORS: times between (1:38:00 - 1:42:00) are 'twenty 'til two'
         // by adding the characters +1 you can add a further hour i.e. 'til three'
         // by adding the characters -1 you can subtract one hour i.e. 'til one'
-        new FuzzyClockRule(_("twenty 'til %s"), 1),
+        new FuzzyClockRule(_("Twenty 'til %s"), 1),
 
         // TRANSLATORS: times between (1:43:00 - 1:47:00) are 'quarter 'til two'
         // by adding the characters +1 you can add a further hour i.e. 'til three'
         // by adding the characters -1 you can subtract one hour i.e. 'til one'
-        new FuzzyClockRule(_("quarter 'til %s"), 1),
+        new FuzzyClockRule(_("Quarter 'til %s"), 1),
 
         // TRANSLATORS: times between (1:48:00 - 1:52:00) are 'ten 'til two'
         // by adding the characters +1 you can add a further hour i.e. 'til three'
         // by adding the characters -1 you can subtract one hour i.e. 'til one'
-        new FuzzyClockRule(_("ten 'til %s"), 1),
+        new FuzzyClockRule(_("Ten 'til %s"), 1),
 
         // TRANSLATORS: times between (1:53:00 - 1:57:00) are 'almost two'
         // by adding the characters +1 you can add a further hour i.e. 'almost three'
         // by adding the characters -1 you can subtract one hour i.e. 'almost one'
-        new FuzzyClockRule(_("almost %s"), 1),
+        new FuzzyClockRule(_("Almost %s"), 1),
     };
 
     protected Gtk.EventBox widget;
